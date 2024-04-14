@@ -12,21 +12,59 @@
 // let value3:boolean=value1 as boolean;
 // console.log(typeof value3);
 //===============Narrowing the unknown Type=======
-let value: unknown;
+// let value: unknown;
  
-if (typeof value =="boolean") {
-    let value1: boolean = value;   // OK
-    console.log(value1);
+// if (typeof value =="boolean") {
+//     let value1: boolean = value;   // OK
+//     console.log(value1);
     
-}
-if (typeof value =="number") {
-    let value1: number = value;   // OK
-    console.log(value1);
+// }
+// if (typeof value =="number") {
+//     let value1: number = value;   // OK
+//     console.log(value1);
 
-}
-if (typeof value =="string") {
-    let value1: string = value;   // OK
-    console.log(value1);
+// }
+// if (typeof value =="string") {
+//     let value1: string = value;   // OK
+//     console.log(value1);
 
-}
+// }
+
+//============Never Type=========
+
+// let name:never='';
+//===============TS Arrays===========
+// let arrName:string[]=[];
+// arrName.push('Dinesh');
+// // arrName.push(3);
+// console.log(arrName);
+// let arrName2:readonly string[]=['Mehra'];
+// arrName2.push('Dinesh');
+// console.log(arrName2);
+// let array:(number | string)[]=[1,"2",3];
+// let value:Array<string| number>=[1,2,3];
+// for (const iterator in value) {
+//     console.log(iterator);
+    
+// }
+
+// var arr = [ 11, 89, 23, 7, 98 ];  
+//       var val = arr.sort((a,b)=>{
+//         return b-a
+//       }); 
+//     console.log( val ); 
+
+//===============Tuples===========
+// define our tuple
+let ourTuple: [number, boolean, string]=[2,false,'Dinesh'];
+
+// initialized incorrectly which throws an error
+// ourTuple = [2,false,'Dinesh'];
+// ourTuple.push(25)
+// console.log(ourTuple);
+// const [x,y,...z]=ourTuple;
+// console.log(x,y);
+
+let nameTuple: [x:number, y:boolean, z:string]=[2,false,'Dinesh'];
+
 
