@@ -56,7 +56,7 @@
 
 //===============Tuples===========
 // define our tuple
-let ourTuple: [number, boolean, string]=[2,false,'Dinesh'];
+// let ourTuple: [number, boolean, string]=[2,false,'Dinesh'];
 
 // initialized incorrectly which throws an error
 // ourTuple = [2,false,'Dinesh'];
@@ -65,6 +65,85 @@ let ourTuple: [number, boolean, string]=[2,false,'Dinesh'];
 // const [x,y,...z]=ourTuple;
 // console.log(x,y);
 
-let nameTuple: [x:number, y:boolean, z:string]=[2,false,'Dinesh'];
+// let nameTuple: [x:number, y:boolean, z:string]=[2,false,'Dinesh'];
+//===========================Object Types==========================
+// let objNew:{name:string,age:number,hasIt?:boolean}={
+//   name:'Dinesh',
+//   age:30,
+// }
+// console.log(objNew);
+//======================ENum==========
+// enum directions{
+//   north=1,
+//   east=4,
+//   west,
+//   south=10
+// }
+// console.log(directions.north,directions.east,directions);
+// enum AppStatus {  
+//   ACTIVE,  
+//   INACTIVE,  
+//   ONHOLD  
+// }   
+// function checkStatus(status:AppStatus): void {  
+//   console.log(status);  
+// }  
+// checkStatus(AppStatus.ONHOLD);  
+//==========================Enum Computed Values=======
+// enum myData {  
+//   name='Dinesh', 
+//   age=getDate('dinesh'),
+//   dob=2024-age,
+//   abc=8
+// }   
+// function getDate(name:string):number{
+//   return (name=='dinesh'? 27:0)
+// }
+// console.log(myData.dob);
+// console.log(myData.age);
+// console.log(myData[8]);
+//=======Type aliases and Interfaces=============
+// type CarYear=number;
+// type CarType=string;
+// type Car={
+//   Year:CarYear,
+//   type:CarType
+// }
+// const carYear:CarYear=2001;
+// const carType:CarType='Toyota';
+// const car:Car={
+//   Year:carYear,
+//   type:carType
+// }
+// console.log(car);
+
+//===================String literals as type alias===========
+// type otherType='Yes' | "no";
+// let variable:otherType='Yes'
+// console.log(variable);
+
+// interface personA{
+//   fname:string,
+//   lname:string,
+//   rollno:number
+// }
+// interface Student extends personA{
+//   class:number,
+//   subject:string,
+//   regNo:number,
+//   pass?:boolean
+// }
+// const user:Student={
+//   fname:'Dinesh',
+//   lname:'Mehra',
+//   rollno:34,
+//   class:9,
+//   subject:'Englsh',
+//   regNo:334
+// }
+// console.log(user);
 
 
+
+
+ 
