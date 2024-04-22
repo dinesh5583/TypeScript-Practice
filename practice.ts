@@ -142,8 +142,56 @@
 //   regNo:334
 // }
 // console.log(user);
+//===============FUnction Overloading===========
+// function addData(data1:string,data2:string):string;
+// function addData(data1:number,data2:number):number;
+// function addData(data1:any,data2:any){
+//     return (data1+data2);
+// }
+// addData(2,3);
+// addData('dinesh',' mehra')
+
+//====================toPrecision() Method=============
+// console.log(12.34.toPrecision(10));
 
 
+// let x = 'hello';
+// console.log(((x as unknown) as number).length); // x is not actually a number so this will return undefined
+
+// class Person {
+//     private age;
+//     // name is a private member variable
+//     public constructor(private name: string,age:number) {
+//         this.age=age
+//     }
+  
+//     public getName(): string {
+//       return this.name;
+//     }
+//     public getAge():number {
+//         return this.age;
+//       }
+//   }
+  
+//   const person = new Person("Jane",6);
+//   console.log(person.getName(),person.getAge());
+
+  // class Person {
+  //   private name: string;
+  
+  //   public constructor(name: string) {
+  //     this.name = name;
+  //   }
+  
+  //   public getName(): string {
+  //     return this.name;
+  //   }
+  // }
+  
+  // const person = new Person("Jane");
+  // console.log(person.getName());
+
+  //======================TS Genrics=============
 
 
  
