@@ -5,5 +5,14 @@
 //================Unknow Type===============
 // let value1:unknown;
 // console.log(typeof value1);
-var point = { x: 10, y: 20 };
-console.log(point);
+var person = {
+    name: "John",
+    age: 25,
+    gender: "male",
+};
+function getProperty(obj, key) {
+    return obj[key];
+}
+console.log(getProperty(person, "name")); // "John"
+console.log(getProperty(person, "age")); // 25
+console.log(getProperty(person, "gender")); // "male"
