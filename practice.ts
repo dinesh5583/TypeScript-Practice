@@ -192,6 +192,45 @@
   // console.log(person.getName());
 
   //======================TS Genrics=============
+//   function getName<T,S>(age:T,name:string):{age:T,name:string}{
+//       return {name:name,age:age}
+//   }
+//   let value=getName<number,string>(27,'DInesh')
+// console.log(value);
+//======================TS Utlity Types==============
+// interface Point{
+//   x:number;
+//   y:number;
+// }
+// let pPart:Partial<Point>={}
+// pPart.x=10
 
+// let objData:Record<string,number>={
+//   1:'dinesh'
+// }
 
- 
+// interface omitInterface{
+//   name:string;
+//   age:number;
+//   height?:string;
+// }
+// let dinesh:Omit<omitInterface,'age' | 'height'>={
+//   name:"dinesh",
+// }
+
+// type Primitive=string | number | boolean;
+// const value : Exclude<Primitive,string>=7;
+
+// type pointParameter=(p:{x:number;y:number})=>void;
+// const point:Parameters<pointParameter>[0]={x:10,y:20};
+// console.log(point);
+
+// interface Person{
+//   name:string;
+//   age:number
+// }
+// const user:Readonly<Person>={
+//   name:"Dinesh",
+//   age:20
+// }
+// user.name='Mehra'
