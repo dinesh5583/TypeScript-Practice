@@ -1,3 +1,4 @@
+/// <reference path="./student.ts" />
 // console.log('Hello Test');
 // let fname:unknown='Dinesh';
 // fname=30;
@@ -255,3 +256,22 @@
 // console.log(getProperty(person, "name")); // "John"
 // console.log(getProperty(person, "age")); // 25
 // console.log(getProperty(person, "gender")); // "male"
+// let value: string | undefined | null = null;
+// value = 'hello';
+// value = undefined;
+
+// let array: number[] = [1, 2, 3];
+// let value = array[0]; 
+// console.log(value);
+
+//////===============Template Literal String=============
+// type Color = "red" | "green" | "blue";
+// type HexColor<T extends Color> = `#${string}`;
+
+// // Usage:
+// let myColor: HexColor<'red'> = "#asda0000FF";
+// console.log(myColor);
+
+//===============namespace=========
+let totalFee=studentCalc.AnnualFeeCalc(2000,12);
+console.log(totalFee);

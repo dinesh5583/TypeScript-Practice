@@ -1,3 +1,10 @@
+var studentCalc;
+(function (studentCalc) {
+    function AnnualFeeCalc(feeAmount, term) {
+        return feeAmount * term;
+    }
+    studentCalc.AnnualFeeCalc = AnnualFeeCalc;
+})(studentCalc || (studentCalc = {}));
 /// <reference path="./student.ts" />
 // console.log('Hello Test');
 // let fname:unknown='Dinesh';
@@ -233,5 +240,5 @@
 // let myColor: HexColor<'red'> = "#asda0000FF";
 // console.log(myColor);
 //===============namespace=========
-var totalFee = studentCalc.AnnualFeeCalc(2000, 12);
+let totalFee = studentCalc.AnnualFeeCalc(2000, 12);
 console.log(totalFee);
